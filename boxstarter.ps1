@@ -55,11 +55,15 @@ choco install poshgit -y
 choco install sysinternals -y
 choco install openssh -y # upgrade standard SSH
 choco install docker-for-windows -y
+choco install 7zip.install notepadplusplus.install vlc vcredist140 pwsh python3  paint.net vcredist2010 vcredist2017  -y
+choco install nodejs.install wireshark -y 
+choco install powertoys
+choco install ipython --source python
 
 
 #--- Apps ---
-# choco install microsoft-teams
-# choco install vcxsrv
+choco install vscode --params "/NoContextMenuFiles /NoContextMenuFolders"
+
 
 #--- Uninstall unecessary applications that come with Windows out of the box ---
 
@@ -233,15 +237,7 @@ Install-WindowsUpdate -acceptEula
 
 Enable-RemoteDesktop
 
-#--- More installations
-choco install 7zip.install notepadplusplus.install vlc vcredist140 pwsh python3  paint.net vcredist2010 vcredist2017  -y
-choco install nodejs.install wireshark -y 
-choco install vscode --params "/NoContextMenuFiles /NoContextMenuFolders"
-#choco install vivaldi.install 
-choco install powertoys
-choco install typora
 
-choco install ipython --source python
 #--- Rename the Computer ---
 # Requires restart, or add the -Restart flag
 $computername = "AcePrimaryZ"
