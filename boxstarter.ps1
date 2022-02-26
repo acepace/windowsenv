@@ -59,6 +59,10 @@ choco install 7zip.install notepadplusplus.install vlc vcredist140 pwsh python3 
 choco install nodejs.install wireshark -y 
 choco install powertoys
 choco install ipython --source python
+choco install bat
+choco install fzf
+choco install fd
+choco install starship
 
 
 #--- Apps ---
